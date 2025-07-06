@@ -60,3 +60,7 @@ htmlcov/
 .env.test.local
 .env.production.local
 .langgraph_api
+credentials.json
+token.json
+".env*" 
+".env.example" 
