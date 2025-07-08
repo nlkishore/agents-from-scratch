@@ -67,7 +67,7 @@ def delete_emails_by_sender(service, sender_email, max_results=100):
         deleted_ids.append(msg_id)
 
     return deleted_ids
-    
+
 def get_email_counts(service, max_results=1000):
     results = service.users().messages().list(userId='me', maxResults=max_results).execute()
     messages = results.get('messages', [])
